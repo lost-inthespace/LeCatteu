@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <title>Question and Answer Card</title>
+  <script src="QA.js"></script>
+</head>
+<body onload="nextQuestion()">
+<script src="question-answers.js"></script>
+<div id="questionContainer">
+  <p id="questionText"></p>
+  <label for="answerInput"></label><input type="text" id="answerInput">
+  <button onclick="checkAnswer()">Check Answer</button>
+  <button onclick="nextQuestion()">Next Question</button>
+</div>
+
+<button id="resetBtn" style="display: block;" role="button" class="button-name" onclick="redirectToMainMenu()">Main Menu</button>
+<button id="continueBtn" style="display:block;" role="button" class="button-name" onclick="nextImageSad()">Continue</button>
+
+<script>
+  function redirectToMainMenu() {
+    window.location.href = 'index.html';
+  }
+</script>
+
+<script src="Sad.js"></script>
+</body>
+</html>
